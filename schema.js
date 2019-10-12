@@ -65,12 +65,14 @@ const queryType =  new GraphQLObjectType({
         id: { type: GraphQLInt }
       },
       resolve: (source, {id}) => {
+		  console.log(`hello this is my logs`)
         return posts[id]
       }
     },
     posts: {
       type: new GraphQLList(postType),
       resolve: () => {
+		console.log(`hello this is my logs2`)
         return posts
       }
     }
