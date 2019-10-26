@@ -9,8 +9,8 @@ module.exports = {
     autorestart: true,
     watch: false,
 	max_memory_restart: '1G',
-	output: '/var/log/testnode.js/api.log',
-	error: '/var/log/testnode.js/api.log',
+	output: 'log/api.log',
+	error: 'error/api.log',
     env: {
       NODE_ENV: 'development'
     },
