@@ -8,7 +8,9 @@ module.exports = {
     instances: 1,
     autorestart: true,
     watch: false,
-    max_memory_restart: '1G',
+	max_memory_restart: '1G',
+	output: '/var/log/testnode.js/api.log',
+	error: '/var/log/testnode.js/api.log',
     env: {
       NODE_ENV: 'development'
     },
